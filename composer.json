@@ -1,0 +1,13 @@
+{
+    "name": "vendor/recipe-blog",
+    "description": "a recipe website based on PHP that can create users and posts and also includes an admin panel",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kaung Htaik San"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
