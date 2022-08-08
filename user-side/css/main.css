@@ -120,6 +120,13 @@ a:active {
 
 
 
+.close:hover,
+.close:focus {
+   color: black;
+   text-decoration: none;
+   cursor: pointer;
+}
+
 /* ===================================================================
  * # typography & general theme styles
  * 
@@ -226,6 +233,7 @@ h3,
 .h3 {
    font-size: 2.4rem;
    line-height: 1.25;
+   text-align: center;
 }
 
 h4,
@@ -3752,8 +3760,9 @@ footer h4::after {
 
 .s-content__main img {
    max-width: 960px;
-   margin: 3rem 0 3rem -6rem;
+   margin: auto;
 }
+
 
 
 /* -------------------------------------------------------------------
@@ -3765,7 +3774,12 @@ footer h4::after {
 }
 
 .s-content__media img {
-   vertical-align: bottom;
+
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 500px;
+   max-height: 500px;
 }
 
 .s-content__media,
@@ -3841,9 +3855,7 @@ footer h4::after {
  * ## author profile
  * ------------------------------------------------------------------- */
 .s-content__author {
-   margin-top: 10.2rem;
-   padding-left: 9rem;
-   position: relative;
+   text-align: center;
 }
 
 .s-content__author img {
@@ -4004,7 +4016,7 @@ footer h4::after {
 
    .s-content__main img {
       max-width: 900px;
-      margin: 3rem 0 3rem -5rem;
+      margin: auto;
    }
 
 }
@@ -4025,7 +4037,7 @@ footer h4::after {
 
    .s-content__main img {
       max-width: 800px;
-      margin: 3rem 0 3rem -4rem;
+      margin: auto;
    }
 
 }
@@ -4044,7 +4056,7 @@ footer h4::after {
 
    .s-content__main img {
       max-width: 100%;
-      margin: 3rem 0 3rem;
+      margin: auto;
    }
 
 }
@@ -4232,6 +4244,8 @@ footer h4::after {
    margin-bottom: 3.9rem;
 }
 
+
+
 /* ------------------------------------------------------------------- 
  * responsive:
  * comments
@@ -4367,5 +4381,6 @@ footer h4::after {
 #cForm {
    margin-top: 3.6rem;
 }
+
 
 /*# sourceMappingURL=main.css.map */

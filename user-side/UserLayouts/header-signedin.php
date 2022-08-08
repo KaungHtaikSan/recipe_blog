@@ -6,7 +6,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>K Receipes Blog</title>
+    <title>K Recipes Blog</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -30,6 +30,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
+
 </head>
 
 <body id="top">
@@ -45,22 +46,22 @@
                     <a class="logo" href="index.php">
                         <h3 style="color: white; font-family: 'Playfair Display', serif;
                         margin-top: auto;">
-                            K Receipes Blog</h3>
+                            K Recipes Blog</h3>
                     </a>
                 </div> <!-- end header__logo -->
 
                 <ul class="header__social">
                     <li>
-                        <a href="#0"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                        <a href="#0"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="https://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                        <a href="#0"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                     </li>
                     <li>
-                        <a href="#0"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                        <a href="https://www.pinterest.com"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
                     </li>
                 </ul> <!-- end header__social -->
 
@@ -68,10 +69,10 @@
 
                 <div class="header__search">
 
-                    <form role="search" method="get" class="header__search-form" action="#">
+                    <form role="search" method="post" class="header__search-form" action="index.php">
                         <label>
                             <span class="hide-content">Search for:</span>
-                            <input type="search" class="search-field" placeholder="Type Keywords" value="" name="s"
+                            <input type="search" class="search-field" placeholder="Type Keywords" value="" name="search"
                                 title="Search for:" autocomplete="off">
                         </label>
                         <input type="submit" class="search-submit" value="Search">
@@ -79,40 +80,51 @@
 
                     <a href="#0" title="Close Search" class="header__overlay-close">Close</a>
 
+
                 </div> <!-- end header__search -->
+
+
+
 
 
                 <a class="header__toggle-menu" href="#0" title="Menu"><span>Menu</span></a>
 
                 <nav class="header__nav-wrap">
 
-                    <h2 class="header__nav-heading h6">Site Navigation</h2>
+                    <!-- <h2 class="header__nav-heading h6">Site Navigation</h2> -->
 
                     <ul class="header__nav">
-                        <li><a href="index.html" title="">Home</a></li>
+                        <li class="current"><a href="index.php" title="">Home</a></li>
                         <li class="has-children">
-                            <a href="#0" title="">Categories</a>
+                            <a href="#0" title="">Recipe Categories</a>
                             <ul class="sub-menu">
-                                <li><a href="category.html">Lifestyle</a></li>
-                                <li><a href="category.html">Health</a></li>
-                                <li><a href="category.html">Family</a></li>
-                                <li><a href="category.html">Management</a></li>
-                                <li><a href="category.html">Travel</a></li>
-                                <li><a href="category.html">Work</a></li>
+                                <li><a href="index.php?category=breakfast">Breakfast & Brunch Recipes</a></li>
+                                <li><a href="index.php?category=lunch">Lunch Recipes</a></li>
+                                <li><a href="index.php?category=dinner">Dinner Recipes</a></li>
+                                <li><a href="index.php?category=appetizer">Appetizers & Snacks Recipes</a></li>
+                                <li><a href="index.php?category=desserts">Desserts Recipes</a></li>
+                                <li><a href="index.php?category=drinks">Drinks Recipes</a></li>
+                                <li><a href="index.php?category=main">Main Dish Recipes</a></li>
+                                <li><a href="index.php?category=salads">Salads Recipes</a></li>
+                                <li><a href="index.php?category=side">Side Dish Recipes</a></li>
+                                <li><a href="index.php?category=soups">Soups Recipes</a></li>
+
                             </ul>
                         </li>
+
+                        <li><a href="about.php" title="">About</a></li>
+                        <li><a href="contact.php" title="">Contact</a></li>
+
                         <li class="has-children">
-                            <a href="#0" title="">Blog</a>
+                            <a href="#0" title=""><?php echo $_SESSION['username'] ?></a>
                             <ul class="sub-menu">
-                                <li><a href="single-video.html">Video Post</a></li>
-                                <li><a href="single-audio.html">Audio Post</a></li>
-                                <li><a href="single-gallery.html">Gallery Post</a></li>
-                                <li><a href="single-standard.html">Standard Post</a></li>
+                                <li><a href="myaccount.php">My Account</a></li>
+                                <li><a href="add-recipe.php">Add a recipe</a></li>
+                                <li><a href="logout.php ">Log out</a></li>
+
+
                             </ul>
                         </li>
-                        <li><a href="style-guide.html" title="">Styles</a></li>
-                        <li class="current"><a href="about.html" title="">About</a></li>
-                        <li><a href="contact.html" title="">Contact</a></li>
                     </ul> <!-- end header__nav -->
 
                     <a href="#0" title="Close Menu" class="header__overlay-close close-mobile-menu">Close</a>
